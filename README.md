@@ -9,7 +9,7 @@
 
 Este repositório contém uma página web simples desenvolvida com **HTML e CSS** que possui **problemas visuais e estruturais inseridos propositalmente**.
 
-A dinâmica simula um fluxo real de contribuição open source: cada grupo recebe issues para resolver, trabalha no próprio fork e envia um Pull Request para os Maintainers avaliarem. Nem todo Pull Request será aceito — assim como acontece em projetos reais.
+A dinâmica simula um fluxo real de contribuição open source: cada grupo recebe issues para resolver, trabalha no próprio fork e envia um Pull Request para os Maintainers avaliarem. Nem todo Pull Request será aceito assim como acontece em projetos reais.
 
 ---
 
@@ -58,7 +58,7 @@ Cada issue representa um problema real na página que deve ser corrigido. Acesse
 
 ## Etapa 1 — Fork
 
-O Fork cria uma cópia deste repositório na sua conta do GitHub. É nessa cópia que o grupo vai trabalhar — **ninguém pode editar este repositório diretamente**.
+O Fork cria uma cópia deste repositório na sua conta do GitHub. É nessa cópia que o grupo vai trabalhar **ninguém pode editar este repositório diretamente**.
 
 **Como fazer o Fork:**
 
