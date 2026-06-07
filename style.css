@@ -1,0 +1,152 @@
+/* ============================================================
+   style.css — Projeto Workshop UFU
+   ATENÇÃO: Este arquivo contém problemas visuais propositais
+   que deverão ser corrigidos pelos grupos como parte do
+   workshop de colaboração no GitHub.
+   ============================================================ */
+
+
+/* ─── PROBLEMA #1: Fundo pouco atrativo ─────────────────────
+   O fundo está branco sem nenhuma identidade visual.
+   Esperado: aplicar background-color ou background no body.
+   ─────────────────────────────────────────────────────────── */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  /* PROBLEMA #2: fonte genérica do sistema, sem importação */
+  font-family: serif;
+}
+
+
+/* ─── PROBLEMA #2: Tipografia inadequada ────────────────────
+   A fonte "serif" padrão não combina com o contexto.
+   Esperado: importar fonte do Google Fonts (ex: Inter, Poppins)
+   e aplicar corretamente em body.
+   ─────────────────────────────────────────────────────────── */
+
+
+/* ─── CABEÇALHO ─────────────────────────────────────────────
+   PROBLEMA #3: sem Flexbox — itens empilhados verticalmente.
+   Esperado: usar display:flex, justify-content, align-items.
+   ─────────────────────────────────────────────────────────── */
+.cabecalho {
+  background-color: #cccccc;
+  padding: 10px;
+  /* SEM FLEX — itens ficam um embaixo do outro */
+}
+
+.cabecalho span {
+  display: block;
+  /* PROBLEMA: deveria ser inline-flex ou deixar o flex do pai agir */
+}
+
+
+/* ─── HERO ───────────────────────────────────────────────────
+   PROBLEMA #3 / #4: sem centralização, baixo contraste.
+   Esperado: centralizar conteúdo com flex, corrigir contraste.
+   ─────────────────────────────────────────────────────────── */
+.hero {
+  background-color: #dddddd;
+  padding: 20px;
+  /* SEM centralização — tudo alinhado à esquerda */
+}
+
+.hero h1 {
+  /* PROBLEMA #4: cor do título quase igual ao fundo */
+  color: #bbbbbb;
+  font-size: 28px;
+}
+
+.hero p {
+  /* PROBLEMA #4: texto cinza claro sobre fundo cinza */
+  color: #c0c0c0;
+  font-size: 14px;
+}
+
+
+/* ─── BOTÕES ─────────────────────────────────────────────────
+   PROBLEMA #3: botões desalinhados, sem estilo visual claro.
+   Esperado: usar flex no pai, aplicar padding, border-radius,
+   cursor:pointer e efeito :hover.
+   ─────────────────────────────────────────────────────────── */
+.btn-hero {
+  background: gray;
+  color: white;
+  border: none;
+  padding: 5px;
+  /* SEM border-radius, SEM cursor, SEM hover */
+}
+
+.btn-inscricao {
+  background: gray;
+  color: white;
+  border: none;
+  padding: 5px;
+  /* Botões com estilos idênticos e sem diferenciação visual */
+}
+
+
+/* ─── SEÇÃO DE CARDS ─────────────────────────────────────────
+   PROBLEMA #6: sem CSS Grid — cards empilhados verticalmente.
+   Esperado: display:grid com grid-template-columns e gap.
+   ─────────────────────────────────────────────────────────── */
+.secao-cards {
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* SEM GRID */
+}
+
+.secao-cards h2 {
+  /* PROBLEMA #4: cor quase invisível */
+  color: #dddddd;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 5px;
+  /* SEM border-radius, SEM sombra, SEM espaçamento generoso */
+}
+
+.card h3 {
+  font-size: 14px;
+  /* PROBLEMA #4: sem contraste adequado */
+  color: #999999;
+}
+
+.card p {
+  font-size: 12px;
+  color: #aaaaaa;
+  /* PROBLEMA #4: texto muito claro sobre fundo claro */
+}
+
+
+/* ─── SEÇÃO SOBRE ────────────────────────────────────────────
+   PROBLEMA #5: seção sem padding, sem espaçamento,
+   sem estrutura visual. Textos grudados.
+   PROBLEMA #6: aparência geral sem cuidado visual.
+   ─────────────────────────────────────────────────────────── */
+.sobre {
+  padding: 5px;
+  /* SEM margin, SEM max-width, SEM centralização */
+}
+
+.sobre h2 {
+  color: #bbbbbb;
+  /* PROBLEMA #4: baixo contraste */
+}
+
+.sobre p {
+  color: #cccccc;
+  font-size: 11px;
+  /* PROBLEMA #4: texto quase invisível */
+  line-height: 1;
+  /* Espaçamento entre linhas ruim */
+}
+
+
+/* ─── RODAPÉ ─────────────────────────────────────────────────
+   PROBLEMA #5: não existe rodapé no HTML nem CSS.
+   Esperado: criar elemento <footer> no HTML e estilizar aqui.
+   ─────────────────────────────────────────────────────────── */
